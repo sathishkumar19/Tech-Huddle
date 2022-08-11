@@ -1,0 +1,81 @@
+site_name: Tech Huddle by Sathish
+theme:
+  name: material
+  logo: assets/Logo.png # Header logo
+  font: false
+  palette: 
+  #- scheme: default
+  #  toggle:
+  #    icon: material/toggle-switch-off-outline 
+  #    name: Switch to dark mode
+  #- scheme: slate 
+  #  toggle:
+  #    icon: material/toggle-switch
+  #    name: Switch to light mode
+  features:
+    - navigation.tabs # Top Navigation Bar
+    - toc.integrate # Enables only left pane for ToC
+    - content.code.annotate
+    - navigation.expand
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+# The GitHub repository information on the published page header
+#repo_url: https://github.com/sathishkumar19/Tech-Huddle
+#repo_name: sathishkumar19/Tech-Huddle
+edit_uri: 'edit/master/docs'
+docs_dir: 'docs'
+site_dir: 'site'
+remote_branch: 'gh-pages'
+remote_name: 'origin'
+# The footer
+copyright: Copyright &copy; 2022 Sathish Kumars All rights reserved
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tablesort.js
+# The style sheets
+extra_css:
+  - stylesheets/extra.css
+# Markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - footnotes
+  - tables
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/slack 
+# Page navigation arrangement
+nav:
+  - 'Overview': 'index.md'
+#  - 'Architecture':
+#      - 'Distributed Compting':
+#        - distributed_computing/gcp_distrubuted_compute.md
+#        - distributed_computing/
+#      - 'Even Driven Architecture':
+#        - event_driven_arch/gcp_event_driven_arch.md 
+#      - 'Messenging Architecture':
+#          - messenging_arch/azure_messenging_arch.md
+#          - messenging_arch/VMware_messening_arch.md
+#      - 'Kubernetes and Container Platforms'
+  - 'Technical Blogs':
+      - 'tech-blogs/tanzu-portfolio.md'
