@@ -5,7 +5,7 @@
 # Example: make venv build
 
 VENVS_DIR := $(HOME)/.venv
-VENV_DIR := $(VENVS_DIR)/sathishwebsite
+VENV_DIR := $(VENVS_DIR)/sathishgitwebsite
 
 .PHONY: help
 help:
